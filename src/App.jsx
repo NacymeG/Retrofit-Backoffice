@@ -14,6 +14,9 @@ import TeamPost from './components/Team/Post';
 import ReviewList from './components/Review/List';
 import ReviewEdit from './components/Review/Edit';
 import ReviewPost from './components/Review/Post';
+import MapList from './components/Map/List';
+import MapEdit from './components/Map/Edit';
+import MapPost from './components/Map/Post';
 
 function App() {
   return (
@@ -42,6 +45,12 @@ function App() {
           list={ReviewList}
           edit={ReviewEdit}
           create={ReviewPost}
+        />
+         <Resource
+          name="localisation"
+          list={MapList}
+          edit={MapEdit}
+          create={MapPost}
         />
       </Admin>
     </div>
